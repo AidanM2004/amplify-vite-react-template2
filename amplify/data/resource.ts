@@ -11,7 +11,6 @@ const schema = a.schema({
     .model({
       content: a.string(),
     })
-    
     .authorization((allow) => [allow.publicApiKey()]),
 });
 
@@ -26,6 +25,8 @@ export const data = defineData({
       expiresInDays: 30,
     },
   },
+
+  
 });
 
 /*== STEP 2 ===============================================================
